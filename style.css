@@ -88,8 +88,54 @@ body{
     margin-left: 10px;
 }
 /*kommenter sections style here*/
-#commentSection{
+.commentSection{
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 50px 10px 50px 10px;
+    gap: 3em;
+}
+.commentCard{
+    display: flex;
+    max-height: 100px;
+}
+.commenterImgCard{
+    max-height: 100%;
+    border-radius: 50%;
+}
+.textCard{
+    display: grid;
+    align-content: space-between;
+    padding: 10px;
+}
+.text{
+    font-size: clamp(20px, 0px, 0px);
+    margin: 0px;
+    font-weight: 20%;
+    /* background-color: red; */
+}
+.textCard p{
+    margin: 0px;
+}
+.textCard{
+    display: grid;
+    overflow:wrap;
+    /* justify-content: space-between; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* #commentSection{
+    display: grid;
+    
 }
 .imgAndQuote{
     display: flex;
@@ -108,6 +154,14 @@ body{
 .commentersQuteCard h4{
     margin-top: 0px;
 }
+.titleUnderComments{
+    display: flex;
+    justify-content: center;
+}
+.titleUnderComments h1{
+    font-size: 3vw;
+} */
+
 
 
 
