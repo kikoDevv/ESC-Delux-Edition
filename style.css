@@ -211,6 +211,7 @@ body{
     /* height: 500px; */
     background-color: #bbc9d3;
     padding: 100px 300px;
+    margin-bottom: 100px;
 }
 .storyText{
     font-size: large;
@@ -225,11 +226,40 @@ body{
     border-color: red;
     border-radius: 5px;
 }
+.teamSection{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    /* max-height: 460px; */
+    background-color: rgb(221, 217, 255);
+}
+.teamImg{
+    max-width: 100%;
+    max-height: 100%;
+}
+.teamInfo{
+    display: grid;
+    padding: 50px;
+}
+.infoBtnHolder{
+    display: flex;
+    justify-content: center;
+}
+.infoBtn{
+    background-color: rgb(222, 255, 90);
+    border-radius: 10px;
+    font-weight: bold;
+    border-color: #E3170A;
+}
+.teamText{
+    font-weight: bold;
+}
+.foter{
+    background-color: #011827;
+    color:white;
+    padding: 50px;
+}
 
-
-
-
-
+/*Here is the responsiv design for smaller display that needed to be hard koded*/
 @media(max-width: 768px){
     .sliderSection{
         display: grid;
@@ -274,5 +304,18 @@ body{
         padding: 0px;
         max-height: 60px;
     }
+    .teamImgHolder{
+        order: -1;
+    }
+    .teamText{
+        font-size: small;
+    }
+    .teamComment{
+        font-size: small;
+    }
+    .teamInfo{
+        padding: 20px 0px 20px 0px;
+    }
+
 
 }
