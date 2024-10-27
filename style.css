@@ -13,11 +13,9 @@ body{
     background-color: var(--background);
     color: white;
     padding:30px;
-    height: 200px;
-    align-content: space-between;
-
 }
 .navBar ul{
+    position: relative;
     display: flex;
     list-style-type: none;
     background-color: var(--background);
@@ -25,14 +23,20 @@ body{
     margin: 0px;
     justify-content: space-evenly;
 }
-.navBar li{
+.navBar a{
+    color: white;
     text-decoration: none;
     padding: 15px;
     display: block;
     font-weight: bold;
+    border-radius: 15px;
+}
+.navBar a:hover{
+    background-color: #458ea9;
 }
 .logoAndTitle{
     display: flex;
+    padding-bottom: 20px;
 }
 .logoAndTitle h1{
     margin: 0px;
@@ -62,6 +66,8 @@ body{
 /*Image and button grup here*/
 .titleImgCard{
     position: relative;
+    max-width: 100%;
+    max-width: 100%;
 }
 .btnGrupHolder{
     display: flex;
@@ -81,7 +87,27 @@ body{
 .btnGrup2{
     margin-left: 10px;
 }
-
+/*kommenter sections style here*/
+#commentSection{
+    display: grid;
+}
+.imgAndQuote{
+    display: flex;
+    padding: 50px;
+    padding: 40px
+}
+.commentersImgCard{
+    max-height: 100px;
+    border-radius: 50%;
+}
+.commentersQuteCard{
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.commentersQuteCard h4{
+    margin-top: 0px;
+}
 
 
 
