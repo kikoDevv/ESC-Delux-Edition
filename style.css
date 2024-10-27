@@ -1,0 +1,106 @@
+:root{
+    --background:#011827;
+    --redBtn:#E3170A;
+    --blueBtn:#8ACFE5;
+}
+body{
+    margin: 0px;
+    font-family: "Roboto";
+    padding-bottom: 500px;
+}
+.headSection{
+    display: grid;
+    background-color: var(--background);
+    color: white;
+    padding:30px;
+    height: 200px;
+    align-content: space-between;
+
+}
+.navBar ul{
+    display: flex;
+    list-style-type: none;
+    background-color: var(--background);
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-evenly;
+}
+.navBar li{
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-weight: bold;
+}
+.logoAndTitle{
+    display: flex;
+}
+.logoAndTitle h1{
+    margin: 0px;
+    align-content: end;
+    max-height: 88px;
+}
+.title{
+    padding-left: 10px;
+}
+.esc{
+    display: flex;
+    padding:40px 45px 3px 3px;
+    border-radius: 10px;
+    border: 3px;
+    border-style: solid;
+}
+.esc p{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    margin: 0px;
+    align-self: end;
+    padding: 10px;
+    max-height: 20px;
+}
+/*Image and button grup here*/
+.titleImgCard{
+    position: relative;
+}
+.btnGrupHolder{
+    display: flex;
+    justify-content: center;
+    transform:translateY(-50%);
+}
+.btnGrupHolder>button{
+    background-color: var(--redBtn);
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+.btnGrup1{
+    margin-right: 10px;
+}
+.btnGrup2{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+@media(max-width: 768px){
+    .navBar{
+        display: none;
+    }
+    .btnGrupHolder{
+        display: grid;
+        justify-content: center;
+        transform: translateY(-26%);
+        .btnGrup2{
+            margin: 10px 0px 0px 0px;
+        }
+        .btnGrup1{
+            margin-left: 10px;
+        }
+    }
+
+}
