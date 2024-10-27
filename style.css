@@ -6,7 +6,6 @@
 body{
     margin: 0px;
     font-family: "Roboto";
-    padding-bottom: 500px;
 }
 .headSection{
     display: grid;
@@ -149,7 +148,7 @@ body{
     border-top-right-radius: 30px;
 }
 .hackerImgCard{
-    max-height: 100%;
+    max-height: 110%;
     max-width:100%;
     border-top-right-radius: 30px;
 }
@@ -320,5 +319,8 @@ body{
     }
     #foter{
         display: grid;
+    }
+    .title{
+        font-size: 1.6em;
     }
 }

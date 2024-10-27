@@ -25,10 +25,10 @@
         </div>
         <nav class="navBar">
             <ul>
-                <li><a href="#commentSection">Play online</a></li>
-                <li><a href="">Play on-site</a></li>
-                <li><a href="">The story</a></li>
-                <li><a href="">Contact us</a></li>
+                <li><a href="">Play online</a></li>
+                <li><a href="#commentSection">Play on-site</a></li>
+                <li><a href="#storySection">The story</a></li>
+                <li><a href="#foter">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -61,7 +61,7 @@
      -
      .
      This section contains commenters picture, quotes and a tittle under-->
-     <section class="commentSection">
+     <section id="commentSection">
         <div class="commentCard">
             <img src="bilder/kommenter.png" class="commenterImgCard" alt="Image not found!"
             srcset="
@@ -166,7 +166,7 @@
             </div>
         </div>
         <div class="cardsContainer">
-            <img src="bilder/hacker.png" class="hackerImgCard" alt="Hacker image not found!"
+            <img src="bilder/hacker1600.png" class="hackerImgCard" alt="Hacker image not found!"
             srcset="
             bilder/hacker400.png 400w,
             bilder/hacker800.png 800w,
@@ -208,7 +208,7 @@
         </button>
     </div>
     <!--the story section-->
-    <section class="storySection">
+    <section id="storySection">
         <p class="storyText">
             Quodsi haberent magnalia inter potentiam et divitias,
              et non illam quidem haec eo spectant haec quoque vos
@@ -280,12 +280,13 @@
         </div>
     </section>
 
-    <footer class="foter">
+    <!--foter needs to be fixt for smaller display -->
+    <footer id="foter">
         <div>
             <h1>[Esc] Hacker Escape Rooms</h1>
-            <p>Quodsi haberent magnalia inter potentiam 
-                et divitias, et non illam quidem haec eo spectant 
-                haec quoque vos omnino desit illud 
+            <p>Quodsi haberent magnalia inter<br>potentiam 
+                et divitias, et non illam<br>quidem haec eo spectant 
+                haec quoque vos omnino desit illud<br>
                 quo solo felicitatis libertatisque perficiuntur.
             </p>
         </div>
@@ -300,10 +301,6 @@
         </div>
         
      </footer>
-
-
-
-
 </body>
 
 </html>
