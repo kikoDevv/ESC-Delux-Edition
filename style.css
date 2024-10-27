@@ -73,18 +73,35 @@ body{
     justify-content: center;
     transform:translateY(-50%);
 }
-.btnGrupHolder>button{
+.onlineBtn{
     background-color: var(--redBtn);
     padding: 15px;
     border-radius: 10px;
     font-weight: bold;
     color: white;
-}
-.btnGrup1{
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
     margin-right: 10px;
 }
-.btnGrup2{
+.onlineBtn:hover{
+    background-color: white;
+    color: red;
+}
+.onSiteBtn{
+    background-color: var(--redBtn);
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
     margin-left: 10px;
+}
+.onSiteBtn:hover{
+    background-color: white;
+    color: red;    
 }
 /*kommenter sections style here*/
 #commentSection{
@@ -175,12 +192,16 @@ body{
     display: flex;
     justify-content: center;
 }
+
 .cardBtn{
-    background-color: var(--redBtn);
+    background-color: rgba(51, 223, 65, 0.457);
     padding: 10px;
     border-radius: 10px;
     font-weight: bold;
     color:white;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 /*Style for the button group under the slider should be here*/
 .btnGrupHolder2{
@@ -195,6 +216,7 @@ body{
     font-weight: bold;
     color: white;
     margin-right: 15px;
+    cursor: pointer;
 }
 .btnGrup4{
     background-color: var(--redBtn);
@@ -203,6 +225,7 @@ body{
     font-weight: bold;
     color: white;
     margin-left: 15px;
+    cursor: pointer;
 }
 /*style for the story section*/
 #storySection{
@@ -260,6 +283,7 @@ body{
     justify-content: space-between;
 }
 
+
 /*Here is the responsiv design for smaller display that needed to be hard koded*/
 @media(max-width: 768px){
     .sliderSection{
@@ -283,8 +307,9 @@ body{
         .btnGrup2{
             margin: 10px 0px 0px 0px;
         }
-        .btnGrup1{
-            margin-left: 10px;
+        .onlineBtn{
+            margin-left: 15px;
+            margin-bottom: 20px;
         }
     }
     .btnGrupHolder2{
