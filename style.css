@@ -51,6 +51,9 @@ body{
     border-radius: 10px;
     border: 3px;
     border-style: solid;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
 }
 .esc p{
     background-color: white;
@@ -61,6 +64,9 @@ body{
     align-self: end;
     padding: 10px;
     max-height: 20px;
+    background-image: conic-gradient(red, blue);
+    background-size: 300% 300%; 
+    animation: color 4s ease-in-out infinite;
 }
 /*Image and button grup here*/
 .titleImgCard{
@@ -250,7 +256,6 @@ body{
     font-weight: bold;
     border-color: red;
     border-radius: 20px;
-    max-width: fit-content;
 }
 #foter{
     display: flex;
@@ -301,7 +306,7 @@ body{
     border-bottom-left-radius: 50px;
 }
 
-/*This quiery is for the background color of lider cards*/
+/*This quiery is for the background color*/
 @keyframes color{
     0%{
         background-position: 0 20%;
@@ -349,11 +354,7 @@ body{
     }
     #storySection{
         height: 300px;
-        padding: 0px 0px;
-    }
-    .storyBtn{
-        padding: 0px;
-        max-height: 60px;
+        padding: 30px 10px 0px 10px;
     }
     #foter{
         display: grid;
@@ -375,5 +376,10 @@ body{
     }
     .infoHolderx{
         border-radius: 0px;
+    }
+    .storyBtn{
+        padding: 10px;
+        max-height: 50%;
+
     }
 }
