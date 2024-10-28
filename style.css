@@ -161,9 +161,13 @@ body{
     /* new */
     display: grid;
     max-height: 440px;
-    background-color: #97d9ff;
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
+    
+    
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
 }
 .hackerImgCard{
     max-height: 110%;
@@ -229,9 +233,10 @@ body{
 #storySection{
     display: grid;
     /* height: 500px; */
-    background-color: #bbc9d3;
+    background-color: #fcfefc;
     padding: 100px 300px;
     margin-bottom: 100px;
+    box-shadow: 0px 1px 5px 0.3px;
 }
 .storyText{
     font-size: large;
@@ -284,8 +289,30 @@ body{
     align-content: space-between;
     padding: 60px;
     max-width: 100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff);
+    border-top-right-radius: 50px;
+}
+.infoHolderx{
+    display: grid;
+    align-content: space-between;
+    padding: 60px;
+    max-width: 100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff);
+    border-bottom-left-radius: 50px;
 }
 
+/*This quiery is for the background color of lider cards*/
+@keyframes color{
+    0%{
+        background-position: 0 20%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
 
 /*Here is the responsiv design for smaller display that needed to be hard koded*/
 @media(max-width: 768px){
@@ -342,5 +369,11 @@ body{
         scroll-snap-align: center; 
         min-width:fit-content;
         max-height: fit-content;
+    }
+    .infoHolder{
+        border-radius: 0px;
+    }
+    .infoHolderx{
+        border-radius: 0px;
     }
 }
