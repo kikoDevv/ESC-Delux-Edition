@@ -244,7 +244,8 @@ body{
     padding: 20px;
     font-weight: bold;
     border-color: red;
-    border-radius: 5px;
+    border-radius: 20px;
+    max-width: fit-content;
 }
 #foter{
     display: flex;
@@ -255,7 +256,7 @@ body{
 }
 
 
-/*Mid section before the footer styles are here*/
+/*Mid section before the footer styles*/
 .gridItems{
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
@@ -289,9 +290,10 @@ body{
 /*Here is the responsiv design for smaller display that needed to be hard koded*/
 @media(max-width: 768px){
     .sliderSection{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        overflow: visible;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding: 20px;
     }
     .navBar{
         display: none;
@@ -306,23 +308,17 @@ body{
         display: grid;
         justify-content: center;
         transform: translateY(-26%);
-        .btnGrup2{
-            margin: 10px 0px 0px 0px;
-        }
-        .onlineBtn{
-            margin-left: 15px;
-            margin-bottom: 20px;
-        }
+    }
+    .onlineBtn{
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .onSiteBtn{
+        border-radius: 20px;
+        margin-top: 10px;
     }
     .btnGrupHolder2{
         display: grid;
-        .btnGrup3{
-            margin: 0px
-        }
-        .btnGrup4{
-            margin-right: 13px;
-            margin-top: 10px;
-        }
     }
     #storySection{
         height: 300px;
@@ -340,5 +336,11 @@ body{
     }
     .imgHolder{
         order: -1;
+    }
+    .cardsContainer {
+        flex: 0 0 80%;
+        scroll-snap-align: center; 
+        min-width:fit-content;
+        max-height: fit-content;
     }
 }
