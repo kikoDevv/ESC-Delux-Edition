@@ -107,7 +107,7 @@ body{
 #commentSection{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 50px 10px 50px 10px;
+    padding: 50px 30px 50px 30px;
     gap: 3em;
 }
 .commentCard{
@@ -121,14 +121,17 @@ body{
 .textCard{
     display: grid;
     align-content: space-between;
-    padding: 10px;
+    padding: 5px 0px 0px 20px;
+    /* background-color: #46b5ff;
+    border-radius: 50px 20px 20px 0px;
+    color: white; */
 }
 .text{
-    font-size: clamp(20px, 0px, 0px);
+    font-size: clamp(18px, 0px, 0px);
     /* font-size: 6vw; */
     margin: 0px;
     font-weight: 20%;
-    /* background-color: red; */
+    padding-bottom: 20px;
 }
 .textCard p{
     margin: 0px;
@@ -188,10 +191,6 @@ body{
 .discriptionsText{
     padding: 0px 10px 0px 10px;
 }
-.btnHolderForCard{
-    display: flex;
-    justify-content: center;
-}
 
 .cardBtn{
     background-color: rgba(51, 223, 65, 0.457);
@@ -202,30 +201,31 @@ body{
     border: none;
     margin-bottom: 10px;
     cursor: pointer;
+    max-width: 40%;
+    justify-self: center;
+}
+.cardBtn:hover{
+    background-color: red;
 }
 /*Style for the button group under the slider should be here*/
-.btnGrupHolder2{
+.btnGrupHolderMid{
     display: flex;
+    margin: 100px 0px 100px 0px;
     justify-content: center;
-    padding: 50px 0px 50px 0px;
 }
-.btnGrup3{
-    background-color: var(--redBtn);
-    padding: 15px;
-    border-radius: 10px;
+.midBtnRight{
+    padding: 20px;
     font-weight: bold;
-    color: white;
-    margin-right: 15px;
-    cursor: pointer;
+    border: none;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 0px 0px 5px 0.2px;
 }
-.btnGrup4{
-    background-color: var(--redBtn);
-    padding: 15px;
-    border-radius: 10px;
+.midBtnLeft{
+    padding: 20px;
     font-weight: bold;
-    color: white;
-    margin-left: 15px;
-    cursor: pointer;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+    box-shadow: 0px 0px 5px 0.2px;
 }
 /*style for the story section*/
 #storySection{
