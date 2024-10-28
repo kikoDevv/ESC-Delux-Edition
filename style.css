@@ -74,34 +74,32 @@ body{
     transform:translateY(-50%);
 }
 .onlineBtn{
-    background-color: var(--redBtn);
-    padding: 15px;
-    border-radius: 10px;
+    padding: 20px;
     font-weight: bold;
-    color: white;
-    border-color: rgb(255, 255, 255);
-    cursor: pointer;
     border: none;
-    margin-right: 10px;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 0px 0px 5px 0.2px;
+    margin-right: 1px;
+    cursor: pointer;
 }
 .onlineBtn:hover{
     background-color: white;
     color: red;
+    box-shadow: 0px 0px 10px 10px;
 }
 .onSiteBtn{
-    background-color: var(--redBtn);
-    padding: 15px;
-    border-radius: 10px;
+    padding: 20px;
     font-weight: bold;
-    color: white;
-    border-color: rgb(255, 255, 255);
-    cursor: pointer;
     border: none;
-    margin-left: 10px;
+    border-radius: 0px 15px 15px 0px;
+    box-shadow: 0px 0px 5px 0.2px;
+    margin-left: 1px;
+    cursor: pointer;
 }
 .onSiteBtn:hover{
     background-color: white;
-    color: red;    
+    color: red;
+    box-shadow: 0px 0px 10px 10px;
 }
 /*kommenter sections style here*/
 #commentSection{
