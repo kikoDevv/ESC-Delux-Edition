@@ -1,12 +1,15 @@
+/* Globala stilar och grundinställningar */
 :root{
     --background:#011827;
     --redBtn:#E3170A;
     --blueBtn:#8ACFE5;
 }
+/* Bakgrundsinställning för hela sidan */
 body{
     margin: 0px;
     font-family: "Roboto";
 }
+/* Stil för sidans header-sektion */
 .headSection{
     display: grid;
     background-color: var(--background);
@@ -31,7 +34,7 @@ body{
     border-radius: 15px;
 }
 .navBar a:hover{
-    background-color: #458ea9;
+    background-color: #458ea9;  /* Effekt när man hovrar över länkar */
 }
 .logoAndTitle{
     display: flex;
@@ -143,18 +146,15 @@ body{
 .textCard{
     display: grid;
     overflow:wrap;
-    /* justify-content: space-between; */
 }
 .titleUnderComment{
     display: flex;
     justify-content: center;
-    /* background-color: red; */
     font-size: 3vw;
 }
 /*Here is the style for slider section and the cards*/
 .sliderSection{
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     grid-template-columns: 1fr 1fr 1fr;
     overflow-x: auto; 
     gap:20px;
@@ -164,7 +164,6 @@ body{
 .cardsContainer{
     flex: 0 0 80%;
     scroll-snap-align: start;
-    /* new */
     display: grid;
     max-height: 440px;
     border-bottom-left-radius: 30px;
@@ -247,7 +246,6 @@ body{
 /*style for the story section*/
 #storySection{
     display: grid;
-    /* height: 500px; */
     background-color: #fcfefc;
     padding: 100px 300px;
     margin-bottom: 100px;
@@ -278,9 +276,7 @@ body{
 /*Mid section before the footer styles*/
 .gridItems{
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* gap: 50px; */
 }
 .imgHolder{
     max-width: 100%;
