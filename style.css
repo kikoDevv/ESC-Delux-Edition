@@ -53,20 +53,20 @@ body{
     border-style: solid;
     background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
     background-size: 300% 300%;
-    animation: color 12s ease-in-out infinite;
+    animation: color 8s ease-in-out infinite;
 }
 .esc p{
     background-color: white;
     border-radius: 10px;
-    color: black;
+    color: rgba(41, 17, 255, 0.765);
     font-weight: bold;
     margin: 0px;
     align-self: end;
     padding: 10px;
     max-height: 20px;
-    background-image: conic-gradient(red, blue);
+    background-image: conic-gradient(yellow, green, white);
     background-size: 300% 300%; 
-    animation: color 4s ease-in-out infinite;
+    animation: color 10s infinite linear;
 }
 /*Image and button grup here*/
 .titleImgCard{
@@ -235,6 +235,15 @@ body{
     border: none;
     box-shadow: 0px 0px 5px 0.2px;
 }
+.midBtnLeft:hover{
+    color: rgb(163, 131, 131);
+    box-shadow: 0px 0px 10px 10px;
+}
+.midBtnRight:hover{
+    color: rgb(163, 131, 131);
+    box-shadow: 0px 0px 10px 10px;
+}
+
 /*style for the story section*/
 #storySection{
     display: grid;
@@ -277,16 +286,16 @@ body{
     max-width: 100%;
     max-height: 100%;
 }
-.btnRed{
-    background-color: red;
+.btnFoter{
+    background-color: rgb(242, 145, 145);
     color: white;
     font-weight: bold;
     padding: 10px;
     border:none;
     border-radius: 10px;
 }
-.btnRed:hover{
-    background-color:rgb(242, 145, 145);
+.btnFoter:hover{
+    background-color:white;
     color: black;
 }
 .infoHolder{
